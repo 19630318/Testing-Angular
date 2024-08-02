@@ -30,7 +30,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@picocss/pico/css/pico.min.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -97,10 +98,14 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "karmaConfig": "karma.conf.js"
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e7993241-f5cf-4c73-85ec-ab2b35e1b4c2"
   }
 }
