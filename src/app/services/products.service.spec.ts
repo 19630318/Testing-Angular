@@ -4,13 +4,11 @@ import { ProductsService } from './products.service';
 import { CreateProductDTO, Product, UpdateProductDTO } from '../models/product.model';
 import { generateManyProducts, generateOneProduct } from '../models/product.mock';
 import { environment } from '../../environment/environment';
-import e from 'express';
-import { stat } from 'fs';
 import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule, HttpStatusCode, provideHttpClient, withInterceptors } from '@angular/common/http';
 import { TokenInterceptor } from '../interceptors/token.interceptor';
 import { TokenService } from './token.service';
 
-fdescribe('ProductsService', () => {
+describe('ProductsService', () => {
     let productService: ProductsService;
     let httpTestingController: HttpTestingController;
     let tokenService: TokenService;

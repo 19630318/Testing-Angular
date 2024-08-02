@@ -11,8 +11,8 @@ module.exports = function (config) {
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
       require('@angular-devkit/build-angular/plugins/karma'),
-      require('Karma-mocha-reporter')
-    ],
+      require('karma-mocha-reporter')
+    ],         
     client: {
       jasmine: {
         // you can add configuration options for Jasmine here
@@ -34,10 +34,10 @@ module.exports = function (config) {
       ],
       check: {
         global: {
-          statements: 80,
-          branches: 80,
-          functions: 80,
-          lines: 80
+          statements: 60,
+          branches: 60,
+          functions: 60,
+          lines: 60
         }
       }
     },

@@ -3,7 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { MapsService } from './maps.service';
 import { timestamp } from 'rxjs';
 
-fdescribe('MapsService', () => {
+describe('MapsService', () => {
   let service: MapsService;
 
   beforeEach(() => {
