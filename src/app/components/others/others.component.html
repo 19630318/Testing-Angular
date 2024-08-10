@@ -1,0 +1,10 @@
+<section class="container">
+    <p>Directiva </p>
+    <h5 highligth>Hay un valor</h5>
+    <h5 highligth="yellow">Hay otro valor yellow</h5>
+    <input [(ngModel)]="color" placeholder="color" [highligth]="color">
+    <h3>Pipe</h3>
+    <p>{{ 'My text' | reverse  }}</p>
+    <input [(ngModel)]="text" type="text">
+    <p>{{ text | reverse }}</p>
+</section>

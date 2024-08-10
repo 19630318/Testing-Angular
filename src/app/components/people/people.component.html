@@ -1,0 +1,16 @@
+<section class="container">
+    <h3>Selected person</h3>
+    <div>
+        <ul>
+            <li>Name: {{ selectedPerson?.name }}</li>
+            <li>Last name: {{ selectedPerson?.lastName }}</li>
+            <li>Age: {{ selectedPerson?.age }}</li>
+            <li>Height: {{ selectedPerson?.height }}</li>
+            <li>Weight: {{ selectedPerson?.weight }}</li>
+        </ul>
+    </div>
+    <h3>Count {{ people.length }}</h3>
+    @for (person of people; track $index) {
+        <app-person [person]="person" (onSelected)="choosePerson($event)"></app-person>
+    }
+</section>
